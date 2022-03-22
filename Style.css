@@ -1,0 +1,91 @@
+
+header, nav, main, footer, aside {display: block;}
+
+*{box-sizing: border-box;}
+
+body {margin: 0;
+	 background-color: #fff;
+}
+#container {color: #006600;
+			font-family: Verdana, Arial, sans-serif;
+}
+header {  background-color: #fff;
+          background-image: url(banner.jpg);
+          background-position: bottom;
+          background-repeat: repeat-x;
+          height: 200px;
+          color: #fff;
+          text-align: right;
+          padding: 0 20px;
+}
+nav {float: left;
+	width: 150px;
+    background-color: #fff;
+}
+aside {float: right;
+	 width: 200px;
+
+}
+main {margin: 0 21px 0 160px;
+	padding: 1px 10px 20px 10px;
+	background-color: #ffffff;
+	color: #000;
+}
+footer {font-size: .70em;
+        text-align: center;
+        color: #000;
+        background-color: #ffffff;
+        padding-top: 10px;
+        clear: both; /*Clears the floated image in the center content area*/
+}
+h1 {margin-top: 0;
+	font-size: 3em;
+	text-align: left;
+	text-shadow: 2px 2px 2px #000000;
+	color: #fff;
+}
+header a{font-size: 0.80em;}
+header a:link, header a:visited{color: #ffffff;}
+header a:focus, header a:hover {color: #ffeeee;}
+
+nav ul {margin-top: 20px;
+        list-style-type: none;
+}
+nav a {text-decoration: none;
+	 font-size: 1.2em;
+}
+nav a:link{color:#000;}
+nav a:visited{color:#000;}
+nav a:focus, nav a:hover{color: #0000ff;}
+nav a:active{color: #000000;}
+
+nav img {margin: 30px;}
+main p {margin: 20px;
+}
+main h2, main h3 {color: #00f;
+				background-color: #ffffff;
+}
+.floatright {margin: 10px;
+			float: right;
+}
+aside h3 {padding-bottom: 2px;
+		border-bottom: 1px solid #000000;
+		margin: 10px;
+		font-size: 0.90em;
+		color: #cc66cc;
+}
+.news {font-size: 0.80em;
+	   margin: 10px;
+}
+@media only screen and (max-width: 1024px){
+		main {margin: 0px;}
+		body {margin: 0px;}
+		#container {min-width: auto;}
+		nav {float: none; width: auto;}
+		aside {float: none; width: auto;}
+		nav li {display: inline-block; padding: .5em}
+		nav ul {text-align: center;}
+		h1, h2, h3 {font-size: 120%;}
+		p {font-size: 90%;}
+		nav img {display: none;}
+}
